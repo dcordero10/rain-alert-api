@@ -6,6 +6,7 @@ api_key = os.environ["API_KEY"]
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/onecall?"
 account_sid = os.environ["ACCOUNT_SID"]
 auth_token = os.environ["AUTH_TOKEN"]
+number = os.environ["PHONE_NUMBER]
 
 
 params = {
@@ -38,8 +39,9 @@ if will_rain:
     message = client.messages \
         .create(
         body="It's going to rain today. Make sure you bring an umbrella!",
-        from_='+14153404820',
-        to='+14152250783'
+        from_=number,
+        to=number
+        
     )
 
     print(message.status)
