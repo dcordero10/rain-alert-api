@@ -4,7 +4,7 @@ import os
 
 api_key = os.environ["API_KEY"]
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/onecall?"
-account_sid = os.environ["ACCOUNT_SIDE"]
+account_sid = os.environ["ACCOUNT_SID"]
 auth_token = os.environ["AUTH_TOKEN"]
 
 
